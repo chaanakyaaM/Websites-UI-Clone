@@ -1,4 +1,4 @@
-#### Result
+# Result
 ![Screenshot (191)](https://github.com/chaanakyaaM/Spotify-UI-clone/assets/131477601/934db405-eb72-4600-8712-bcbbf86247fd)
 
 ![Screenshot (192)](https://github.com/chaanakyaaM/Spotify-UI-clone/assets/131477601/acc26930-126b-4fb8-8be1-567a3fb673a2)
