@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+    --reddit-font: "Reddit Sans";
+    --grey: #2a3236;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 2px solid red; */
+}
+header{
+    background-color: #0e1113;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.logo > h1{
+    font-size: 35px;
+    color: #fff;
+    font-family: var(--reddit-font);
+}
+#icon{
+    height: 40px;
+}
+#search::placeholder{
+    color: white;
+}
+#search{
+    height: 50px;
+    width: 500px;
+    border-radius: 50px;
+    background-color: var(--grey);
+    background: url('assets/searchicon.png') 5px 5px no-repeat scroll ;
+    background-size: 40px;
+    filter: invert(50%);
+    color: #fff;
+    font-size: 25px;
+    outline: none;
+    padding-left: 50px;
+}
+.login{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    
+}
+.login > img{
+    height: 30px;
+}
+#login-btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(201, 59, 7);
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+
+}
+#nav{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+#nav > img{
+    height: 25px;
+}
