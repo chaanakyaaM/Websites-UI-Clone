@@ -27,10 +27,48 @@
     </div>
     <div class="main">
         <div class="leftarea">
-            <a href="#">Home</a>
-            <a href="#">Popular</a>
+            <div class="toplevel">
+                <a href="#"><img src="assets/home.png" alt=""> Home</a>
+                <a href="#"><img src="assets/popular.png" alt=""> Popular</a>
+            </div>
+            <hr style="width: 90%;background-color: #2a3236;height: 1px;border: none;margin-top: 10px;">
+            <div class="middlelevel">
+                <button id="topics" onclick="hidemiddle()" >Topics <img id="arrow" src="assets/arrow.png" alt=""></button>
+                <button class="hidemiddle">Internet Culture(Viral)</button>
+                <button class="hidemiddle">Games</button>
+                <button class="hidemiddle">Q&As</button>
+                <button class="hidemiddle">Technology</button>
+                <button class="hidemiddle">Pop Culture</button>
+                <button class="hidemiddle">Movies & TV</button>
+            </div>
+            <hr style="width: 90%;background-color: #2a3236;height: 1px;border: none;margin-top: 10px;">
+            <div class="bottomlevel">
+                <button id="resources" onclick="hidebottom()">Resources <img id="arrow2" src="assets/arrow.png" alt=""></button>
+                <button class="hidebottom">Internet Culture(Viral)</button>
+                <button class="hidebottom">Games</button>
+                <button class="hidebottom">Q&As</button>
+                <button class="hidebottom">Technology</button>
+                <button class="hidebottom">Pop Culture</button>
+                <button class="hidebottom">Movies & TV</button>
+            </div>
         </div>
-        <div class="mainarea"></div>
+        <div class="mainarea">
+            <div class="headscroller">
+                <div class="news1"></div>
+                <div class="news2"></div>
+                <div class="news3"></div>
+                <div class="news4"></div>
+                <div class="news5"></div>
+                <div class="news6"></div>
+                <div class="news7"></div>
+                <div class="news8"></div>
+                <div class="news9"></div>
+                <div class="news10"></div>
+
+            </div>
+            <div class="mainscroller"></div>
+        </div>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>

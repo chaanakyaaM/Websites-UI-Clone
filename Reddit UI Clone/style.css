@@ -31,8 +31,7 @@ header{
     justify-content: center;
     align-items: center;
     column-gap: 5px;
-    margin-left: 15px;
-    scale: 0.9;
+    margin-left: 20px;
 }
 .logo > h1{
     font-size: 35px;
@@ -129,6 +128,10 @@ header{
     width: 320px;
     background-color: #0e1113;
     height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
     border-right: 2px solid #2a3236;
 }
 .mainarea{
@@ -150,4 +153,89 @@ header{
     background-color: #2a3236;
     align-self: center;
     border-radius: 2px;
+}
+.toplevel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.toplevel > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--roboto);
+    font-size: 17px;
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #dbe4dc;
+    transition-duration: 0.1s;
+    padding-left: 35px;
+    column-gap: 10px;
+}
+.toplevel > a:hover{
+    background-color: #2a3236;
+}
+.toplevel > a > img{
+    filter: invert(90%);
+    height: 30px;
+}
+.test{
+    height: 50px;
+    width: 90%;
+}
+.middlelevel,.bottomlevel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    transition: ease 1s;
+}
+#arrow,#arrow2{
+    height: 25px;
+    filter: invert(100%);
+    transition: ease 0.5s;
+    transform: rotateZ(0deg);
+}
+#topics,.hidemiddle,#resources,.hidebottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    color: white;
+    font-size: 17px;
+    background-color: #0e1113;
+    border-radius: 2px;
+    padding: 25px 15px;
+    border: none;
+    font-family: var(--roboto);
+    z-index: 10;
+    margin: 5px 0px;
+    transition: linear 1s;
+
+}
+.hidemiddle{
+    opacity: 0;
+    transition-duration: 2s;
+    color: #dbe4dc;;
+
+}
+#topics:hover,.hidemiddle:hover{
+    background-color: #2a3236;
+    transition-duration: 1s;
+}
+.bottomlevel{
+    height: 500px;
+    z-index: 15;
+    width: 100%;
+    background-color: #0e1113;
+}
+#resources{
+    height: 500px;
 }
