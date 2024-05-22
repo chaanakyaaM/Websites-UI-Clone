@@ -14,6 +14,7 @@
 body{
     background-color: #0e1113;
     overflow: hidden;
+    width: 100%;
 }
 header{
     background-color: #0e1113;
@@ -125,7 +126,7 @@ header{
     align-items: center;
 }
 .leftarea{
-    width: 320px;
+    width: 500px;
     background-color: #0e1113;
     height: 93vh;
     display: flex;
@@ -135,9 +136,12 @@ header{
     border-right: 2px solid #2a3236;
 }
 .mainarea{
-    width: calc(100-20)px;
+    width: 83%;
     background-color: #0e1113;
     height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .line{
     width: 100%;
@@ -195,12 +199,20 @@ header{
     align-items: center;
     height: 50px;
     transition: ease 1s;
+    margin: 5px 0px;
+}
+.middlelevel{
+    z-index: 10;
 }
 #arrow,#arrow2{
     height: 25px;
     filter: invert(100%);
     transition: ease 0.5s;
     transform: rotateZ(0deg);
+}
+.hidebottom > img,.hidemiddle > img{
+    height: 25px;
+    filter: invert(100%);
 }
 #topics,.hidemiddle,#resources,.hidebottom{
     display: flex;
@@ -211,31 +223,71 @@ header{
     color: white;
     font-size: 17px;
     background-color: #0e1113;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 25px 15px;
     border: none;
     font-family: var(--roboto);
     z-index: 10;
-    margin: 5px 0px;
-    transition: linear 1s;
-
+    margin: 5px 0px;    
+    transition-duration: 1s;
 }
 .hidemiddle{
-    opacity: 0;
-    transition-duration: 2s;
-    color: #dbe4dc;;
-
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
+    justify-items: flex-start;
+    fill: 3;
 }
-#topics:hover,.hidemiddle:hover{
+.hidemiddle,.hidebottom{
+    opacity: 0;
+    transition-duration: 1s;
+    color: #dbe4dc;;
+    
+}
+#topics,#resources{
+    color: #9da5a5;
+}
+#topics:hover,.hidemiddle:hover,.hidebottom:hover,#resources:hover{
     background-color: #2a3236;
     transition-duration: 1s;
 }
 .bottomlevel{
-    height: 500px;
+    height: 50px;
     z-index: 15;
     width: 100%;
     background-color: #0e1113;
 }
-#resources{
+.lowlevel{
     height: 500px;
+    width: 100%;
+    background-color: #0e1113;
+    z-index: 20;
+    margin-top: 0px;
 }
+.headscroller{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    margin: 10px;
+    width: 85%;
+    overflow: auto;
+    padding: 10px;
+}
+.headscroller::-webkit-scrollbar{
+    width: 0px;
+}
+.news{
+    height: 250px;
+    width: 350px;
+    flex-shrink: 0;
+    background-color: red;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    color: wheat;
+    background-repeat: no-repeat;
+    font-family: var(--roboto);
+}
+
+
