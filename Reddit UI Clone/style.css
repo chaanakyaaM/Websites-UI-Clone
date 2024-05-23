@@ -205,13 +205,13 @@ header{
     z-index: 10;
 }
 #arrow,#arrow2{
-    height: 25px;
+    height: 20px;
     filter: invert(100%);
     transition: ease 0.5s;
     transform: rotateZ(0deg);
 }
 .hidebottom > img,.hidemiddle > img{
-    height: 25px;
+    height: 20px;
     filter: invert(100%);
 }
 #topics,.hidemiddle,#resources,.hidebottom{
@@ -285,9 +285,32 @@ header{
     border-radius: 20px;
     background-position: center;
     background-size: cover;
-    color: wheat;
+    color: rgb(253, 253, 253);
     background-repeat: no-repeat;
     font-family: var(--roboto);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.textcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+.h1{
+    font-size: 25px;
+}
+.para{
+    font-weight: 300;
+    
+}
+p > img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
 

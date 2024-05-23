@@ -1,3 +1,11 @@
+const labels = document.querySelectorAll('.hidebottom ,.hidemiddle');
+labels.forEach((label)=>{
+    label.addEventListener('click',()=>{
+        alert('This is just a UI clone');
+        });
+});
+
+
 function hidemiddle(){
     console.log('working');
     // const vall=document.getElementById('topics');
