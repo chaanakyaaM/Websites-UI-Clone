@@ -380,3 +380,50 @@ span{
 .headbtns > button:hover{
     background-color: #2a3236;
 }
+.maincards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #0e1113;
+    /* background-color: red; */
+    height: auto;
+}
+.card{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 15px;
+}
+.videoimage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    padding: 10px;
+}
+.videoimage > video{
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    border-radius: 20px;
+}
+.fourbuttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+}
+.card:hover{
+    background-color: #2a3236;
+    transition-duration: 1s;
+}

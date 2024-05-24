@@ -1,3 +1,4 @@
+
 const labels = document.querySelectorAll('.hidebottom ,.hidemiddle');
 labels.forEach((label)=>{
     label.addEventListener('click',()=>{
