@@ -126,7 +126,7 @@ header{
     align-items: center;
 }
 .leftarea{
-    width: 500px;
+    width: 350px;
     background-color: #0e1113;
     height: 93vh;
     display: flex;
@@ -140,8 +140,9 @@ header{
     background-color: #0e1113;
     height: 93vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
 }
 .line{
     width: 100%;
@@ -218,7 +219,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 35px;
     color: white;
     font-size: 17px;
@@ -322,4 +323,60 @@ p > img{
 
 span{
     font-weight: 600;
+}
+.mainscroller{
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+    width: 85%;
+ 
+}
+.mainarea{
+    overflow: auto;
+}
+.mainleft{
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(90, 88, 88);
+}
+.mainright{
+    width: 28%;
+    height: 100px;
+    background-color: rgb(156, 154, 154);
+}
+.headbtns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    width: 100%;
+
+}
+.mainleft >.headbtns > button > img{
+    height: 20px;
+    filter: invert(50%);
+}
+.mainleft >.headbtns > button{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding:5px  10px;
+    border-radius: 25px;
+    border: none;
+    color: #696e70;
+    font-family: var(--roboto);
+    font-size: 15px;
+    background-color: #0e1113;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.headbtns > button:hover{
+    background-color: #2a3236;
 }
