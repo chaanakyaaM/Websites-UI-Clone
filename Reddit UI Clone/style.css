@@ -48,7 +48,7 @@ header {
 }
 #search {
   height: 45px;
-  width: 500px;
+  width: 600px;
   border-radius: 50px;
   background-color: var(--grey);
   /* background: url('assets/searchicon.png') 5px 5px no-repeat scroll ; */
