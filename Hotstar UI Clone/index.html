@@ -6,14 +6,15 @@
     <title>Disney+ Hotstar - Watch TV Shows, Movies, Specials, Live Cricket &amp; Football</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            background-color: #0f1014;
-        }
         *{
             padding: 0px;
             margin: 0px;
+            }
+
+        body{
+                background-color: #0f1014;
         }
-        .rightheader{
+            .rightheader{
             height: 100vh;
             width: 125px;
             display: flex;
@@ -51,7 +52,20 @@
         .icons{
             display: flex;
             flex-direction: column;
+            align-items: center;
             row-gap: 50px;
+            width: 100px;
+        }
+        .icons > a > img{
+            filter: invert(50%);
+            height: 30px;
+            opacity: 0.5;
+            transition-duration: 0.2s;
+        }
+        .icons > a > img:hover{
+            scale: 1.2;
+            filter: invert(75%);
+            opacity: 1;
         }
     </style>
 </head>
@@ -62,13 +76,13 @@
     </div>
     <div class="rightheader">
         <div class="icons">
-            <a href="">a</a>
-            <a href="">b</a>
-            <a href="">c</a>
-            <a href="">d</a>
-            <a href="">e</a>
-            <a href="">f</a>
-            <a href="">g</a>
+            <a  href="" id="profile"><img src="assets/profile-icon.png" alt="" ></a>
+            <a href=""><img src="assets/search-icon.png" alt=""></a>
+            <a href=""><img src="assets/home-icon2.png" alt=""></a>
+            <a href=""><img src="assets/tv-icon.png" alt=""></a>
+            <a href=""><img src="assets/radio-icon.png" alt=""></a>
+            <a href=""><img src="assets/ball-icon.png" alt=""></a>
+            <a href=""><img src="assets/categories-icon.png" alt=""></a>
         </div>
     </div>
     
