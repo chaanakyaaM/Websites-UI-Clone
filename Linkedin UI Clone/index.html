@@ -10,6 +10,8 @@
         *{
             margin: 0px;
             padding: 0px;
+            /* border: 2px solid black; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
         body{
             height: 300vh;
@@ -100,25 +102,66 @@
             border-radius: 10px;
         }
         .logo{
-            width: 450px;
+            width: 500px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         .logo > img{
-            height: 50px;
+            height: 60px;
         }
         .logo > input{
             height: 50px;
             width: 420px;
             border-radius: 10px;
+            border: none;
+        }
+        .logo > input{
+            width: 400px;
+            border-radius: 10px;
+            padding-left: 20px;
+            font-size: 20px;
+            background-color: #f4f2ee;
         }
         .icons{
             width: 900px;
             height: 100%;
-            border: 2px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
+        .sec-icons, .main-icons{
+            height: inherit;
+            /* width: 200px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-icons{
+            width: 600px;
+        }
+        .main-icons > a, .sec-icons > a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .sec-icons{
+            width: 200px;
+        }
+        .sec-icons > a, .main-icons > a{
+            height: 100%;
+            scale: 0.9;
+            text-decoration: none;
+            color: black;
+        }
+        .sec-icons > a > img , .main-icons > a > img{
+            height: 100%;  
+            scale: 0.7;
+            filter: invert(30%);
+        }
+        
     </style>
 </head>
 <body>
@@ -127,9 +170,24 @@
             <div class="nav-icons">
                 <div class="logo">
                     <img src="assets/download-removebg-preview.png" alt="">
-                    <input type="text" name="" id="">
+                    <input type="text" name="search" id="" placeholder="Search">
                 </div>
-                <div class="icons"></div>
+                <div class="icons">
+                    <div class="main-icons">
+                        <a href="#"><img src="assets/home-icon.png" alt="">Home</a>
+                        <a href="#"><img src="assets/social-icon.png" alt="">My Network</a>
+                        <a href=""><img src="assets/briefcase-icon.png" alt="">Jobs</a>
+                        <a href=""><img src="assets/messaging.png" alt="">Messaging</a>
+                        <a href=""><img src="assets/notification-icon.png" alt="">Notifications</a>
+                        <a href=""><img src="" alt="">ME</a>
+
+                    </div>
+                    <div class="sec-icons">
+                        <a href=""><img src="assets/more-icon.png" alt="">For Bussiness</a>
+                        <a href=""><img src="assets/learning-icon.png" alt="">Learning</a>
+                    </div>
+                    
+                </div>
             </div>
         </div>
         <div class="main">
