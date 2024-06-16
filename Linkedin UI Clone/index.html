@@ -70,6 +70,7 @@
             width: 850px;
             margin: inherit 30px;
             background-color: yellow;
+            row-gap: 10px;
         }
         .main-right{
             width: 425px;
@@ -99,7 +100,8 @@
             width: 100%;
             height: 150px;
             background-color: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            border: 3px solid #dfdeda;
         }
         .logo{
             width: 500px;
@@ -109,20 +111,16 @@
             /* border: 1px solid black; */
         }
         .logo > img{
-            height: 60px;
+            height: 55px;
         }
         .logo > input{
             height: 50px;
-            width: 420px;
-            border-radius: 10px;
-            border: none;
-        }
-        .logo > input{
-            width: 400px;
-            border-radius: 10px;
+            width: 415px;
+            border-radius: 5px;
             padding-left: 20px;
             font-size: 20px;
-            background-color: #f4f2ee;
+            background-color: #edf3f8;
+            border: none;
         }
         .icons{
             width: fit-content;
@@ -155,13 +153,15 @@
             height: 100%;
             scale: 0.9;
             text-decoration: none;
-            margin-bottom: 5px;
+            /* margin-bottom: 5px; */
+            /* border: 1px solid black; */
             color: black;
         }
         .sec-icons > a > img , .main-icons > a > img{
             height: 100%;  
             scale: 0.7;
             filter: invert(30%);
+            margin-bottom: -10px;
         }
         .main-icons > a:nth-child(1)::before{
             content: "";
@@ -173,19 +173,25 @@
             background-color: white;
             border: 7px solid rgb(198, 8, 8);
             border-radius: 50%;
-            top: 0px;
+            top: 7px;
             left: 50%;
         }
         .main-icons > a:nth-child(1)::after{
             content: "";
             display: block;
             position: absolute;
-            height: 5px;
-            width: 100px;
+            height: 3px;
+            width: 120px;
             z-index: 999;
             background-color: black;
             top: 70px;
-            /* left: 50%; */
+        }
+        .post{
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            border-radius: 10px;
+            border: 2px solid #dfdeda
         }
         
     </style>
@@ -205,7 +211,7 @@
                         <a href=""><img src="assets/briefcase-icon.png" alt="">Jobs</a>
                         <a href=""><img src="assets/messaging.png" alt="">Messaging</a>
                         <a href=""><img src="assets/notification-icon.png" alt="">Notifications</a>
-                        <a href=""><img src="" alt="">ME</a>
+                        <a href=""><img src="assets/profile.png" alt="">ME</a>
 
                     </div>
                     <div class="sec-icons">
@@ -224,7 +230,9 @@
             </div>
             <div class="main-center">
                 <div class="centertop"></div>
-                <div class="centerbottom"></div>
+                <div class="centerbottom">
+                </div>
+                <div class="post"></div>
             </div>
             <div class="main-right">
                 <div class="right1"></div>
