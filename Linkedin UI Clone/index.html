@@ -125,7 +125,7 @@
             background-color: #f4f2ee;
         }
         .icons{
-            width: 900px;
+            width: fit-content;
             height: 100%;
             display: flex;
             align-items: center;
@@ -148,18 +148,44 @@
             justify-content: center;
         }
         .sec-icons{
+            border-left: 2px solid grey;
             width: 200px;
         }
         .sec-icons > a, .main-icons > a{
             height: 100%;
             scale: 0.9;
             text-decoration: none;
+            margin-bottom: 5px;
             color: black;
         }
         .sec-icons > a > img , .main-icons > a > img{
             height: 100%;  
             scale: 0.7;
             filter: invert(30%);
+        }
+        .main-icons > a:nth-child(1)::before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            z-index: 999;
+            background-color: white;
+            border: 7px solid rgb(198, 8, 8);
+            border-radius: 50%;
+            top: 0px;
+            left: 50%;
+        }
+        .main-icons > a:nth-child(1)::after{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 100px;
+            z-index: 999;
+            background-color: black;
+            top: 70px;
+            /* left: 50%; */
         }
         
     </style>
