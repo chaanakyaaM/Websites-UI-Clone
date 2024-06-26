@@ -1,259 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feed | LinkedIn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/download-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/download-removebg-preview.png"
+      type="image/x-icon"
+    />
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            /* border: 2px solid black; */
-            font-family: Verdana, Geneva, Tahoma, sans-serif
-        }
-        body{
-            height: 300vh;
-        }
-        .container{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            background-color: #f4f2ee;
-        }
-        .nav{
-            width: 100%;
-            height: 80px;
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            z-index: 999;
-        }
-        .nav-icons{
-            height: 60px;
-            width: 1650px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-        }
-        .main{
-            width: 1700px;
-            height: 100%;
-            /* background-color: black; */
-            margin: auto;
-            margin-top: 100px;
-            display: flex;
-            
-        }
-        .main-left,.main-center,.main-right{
-            border: 1px solid white;
-            margin: 15px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .main-left{
-            width: 325px;
-            height: fit-content;
-            background-color: #f4f2ee;
-            row-gap: 10px;
-        }
-        .main-center{
-            width: 850px;
-            margin: inherit 30px;
-            background-color: yellow;
-            row-gap: 10px;
-        }
-        .main-right{
-            width: 425px;
-            height: fit-content;
-            background-color: #f4f2ee;
-            row-gap: 10px;
-        }
-        .left1,.left2{
-            width: 100%;
-            height: 600px;
-            background-color: green;
-            border-radius: 10px;
-        }
-        .right1,.right2,.right3{
-            width: 100%;
-            height: 300px;
-            background-color: violet;
-            border-radius: 10px;
-        }
-        .right1{
-            height: 550px;
-        }
-        .right2{
-            height: 350px;
-        }
-        .centertop{
-            width: 100%;
-            height: 150px;
-            background-color: white;
-            border-radius: 15px;
-            border: 3px solid #dfdeda;
-        }
-        .logo{
-            width: 500px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* border: 1px solid black; */
-        }
-        .logo > img{
-            height: 55px;
-        }
-        .logo > input{
-            height: 50px;
-            width: 415px;
-            border-radius: 5px;
-            padding-left: 20px;
-            font-size: 20px;
-            background-color: #edf3f8;
-            border: none;
-        }
-        .icons{
-            width: fit-content;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .sec-icons, .main-icons{
-            height: inherit;
-            /* width: 200px; */
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .main-icons{
-            width: 600px;
-        }
-        .main-icons > a, .sec-icons > a{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .sec-icons{
-            border-left: 2px solid grey;
-            width: 200px;
-        }
-        .sec-icons > a, .main-icons > a{
-            height: 100%;
-            scale: 0.9;
-            text-decoration: none;
-            /* margin-bottom: 5px; */
-            /* border: 1px solid black; */
-            color: black;
-        }
-        .sec-icons > a > img , .main-icons > a > img{
-            height: 100%;  
-            scale: 0.7;
-            filter: invert(30%);
-            margin-bottom: -10px;
-        }
-        .main-icons > a:nth-child(1)::before{
-            content: "";
-            display: block;
-            position: absolute;
-            height: 10px;
-            width: 10px;
-            z-index: 999;
-            background-color: white;
-            border: 7px solid rgb(198, 8, 8);
-            border-radius: 50%;
-            top: 7px;
-            left: 50%;
-        }
-        .main-icons > a:nth-child(1)::after{
-            content: "";
-            display: block;
-            position: absolute;
-            height: 3px;
-            width: 120px;
-            z-index: 999;
-            background-color: black;
-            top: 70px;
-        }
-        .post{
-            height: 1000px;
-            width: 100%;
-            background-color: black;
-            border-radius: 10px;
-            border: 2px solid #dfdeda
-        }
-        .right1{
-            display: flex;
-            flex-direction: column;
-        }
-        .top-news{
-            width: 85%;
-            padding: 30px;
-            background-color: blue;
-        }
-        
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* border: 2px solid black; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        height: 300vh;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: #f4f2ee;
+      }
+      nav {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        z-index: 999;
+      }
+      .nav-icons {
+        height: 60px;
+        width: 1650px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+      .main {
+        width: 1700px;
+        height: 100%;
+        /* background-color: black; */
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+      }
+      .main-left,
+      .main-center,
+      .main-right {
+        border: 1px solid white;
+        margin: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .main-left {
+        width: 325px;
+        height: fit-content;
+        background-color: #f4f2ee;
+        row-gap: 10px;
+      }
+      .main-center {
+        width: 850px;
+        margin: inherit 30px;
+        background-color: yellow;
+        row-gap: 10px;
+      }
+      .main-right {
+        width: 425px;
+        height: fit-content;
+        background-color: #f4f2ee;
+        row-gap: 10px;
+      }
+      .left1,
+      .left2 {
+        width: 100%;
+        height: 600px;
+        background-color: green;
+        border-radius: 10px;
+      }
+      .right1,
+      .right2,
+      .right3 {
+        width: 100%;
+        height: 300px;
+        background-color: violet;
+        border-radius: 10px;
+      }
+      .right1 {
+        height: 550px;
+      }
+      .right2 {
+        height: 350px;
+      }
+      .centertop {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        border-radius: 15px;
+        border: 3px solid #dfdeda;
+      }
+      .logo {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+      }
+      .logo > img {
+        height: 55px;
+      }
+      .logo > input {
+        height: 50px;
+        width: 415px;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-size: 20px;
+        background-color: #edf3f8;
+        border: none;
+      }
+      .icons {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .sec-icons,
+      .main-icons {
+        height: inherit;
+        /* width: 200px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .main-icons {
+        width: 600px;
+      }
+      .main-icons > a,
+      .sec-icons > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .sec-icons {
+        border-left: 2px solid grey;
+        width: 200px;
+      }
+      .sec-icons > a,
+      .main-icons > a {
+        height: 100%;
+        scale: 0.9;
+        text-decoration: none;
+        /* margin-bottom: 5px; */
+        /* border: 1px solid black; */
+        color: black;
+      }
+      .sec-icons > a > img,
+      .main-icons > a > img {
+        height: 100%;
+        scale: 0.7;
+        filter: invert(30%);
+        margin-bottom: -10px;
+      }
+      .main-icons > a:nth-child(1)::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        z-index: 999;
+        background-color: white;
+        border: 7px solid rgb(198, 8, 8);
+        border-radius: 50%;
+        top: 7px;
+        left: 50%;
+      }
+      .main-icons > a:nth-child(1)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 120px;
+        z-index: 999;
+        background-color: black;
+        top: 70px;
+      }
+      .post {
+        height: 1000px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+        border: 2px solid #dfdeda;
+      }
+      .right1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .top-news {
+        width: 85%;
+        padding: 30px;
+        background-color: blue;
+      }
+      .headtop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 30px;
+      }
+      .headright,.headleft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="nav">
-            <div class="nav-icons">
-                <div class="logo">
-                    <img src="assets/download-removebg-preview.png" alt="">
-                    <input type="text" name="search" id="" placeholder="Search">
-                </div>
-                <div class="icons">
-                    <div class="main-icons">
-                        <a href="#"><img src="assets/home-icon.png" alt="">Home</a>
-                        <a href="#"><img src="assets/social-icon.png" alt="">My Network</a>
-                        <a href=""><img src="assets/briefcase-icon.png" alt="">Jobs</a>
-                        <a href=""><img src="assets/messaging.png" alt="">Messaging</a>
-                        <a href=""><img src="assets/notification-icon.png" alt="">Notifications</a>
-                        <a href=""><img src="assets/profile.png" alt="">ME</a>
-
-                    </div>
-                    <div class="sec-icons">
-                        <a href=""><img src="assets/more-icon.png" alt="">For Bussiness</a>
-                        <a href=""><img src="assets/learning-icon.png" alt="">Learning</a>
-                    </div>
-                    
-                </div>
+      <nav>
+        <div class="nav-icons">
+          <div class="logo">
+            <img src="assets/download-removebg-preview.png" alt="" />
+            <input type="text" name="search" id="" placeholder="Search" />
+          </div>
+          <div class="icons">
+            <div class="main-icons">
+              <a href="#"><img src="assets/home-icon.png" alt="" />Home</a>
+              <a href="#"
+                ><img src="assets/social-icon.png" alt="" />My Network</a
+              >
+              <a href=""><img src="assets/briefcase-icon.png" alt="" />Jobs</a>
+              <a href=""><img src="assets/messaging.png" alt="" />Messaging</a>
+              <a href=""
+                ><img
+                  src="assets/notification-icon.png"
+                  alt=""
+                />Notifications</a
+              >
+              <a href=""><img src="assets/profile.png" alt="" />ME</a>
             </div>
+            <div class="sec-icons">
+              <a href=""
+                ><img src="assets/more-icon.png" alt="" />For Bussiness</a
+              >
+              <a href=""
+                ><img src="assets/learning-icon.png" alt="" />Learning</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="main">
-            
-            <div class="main-left">
-                <div class="left1"></div>
-                <div class="left2"></div>
-            </div>
-            <div class="main-center">
-                <div class="centertop"></div>
-                <div class="centerbottom">
-                </div>
-                <div class="post"></div>
-            </div>
-            <div class="main-right">
-                <div class="right1">
-                    <div class="top-news">
-                        LinkedIn News
-                        Top Stories
-                    </div>
-                </div>
-                <div class="right2"></div>
-                <div class="right3"></div>
-            </div>
+      </nav>
+      <div class="main">
+        <div class="main-left">
+          <div class="left1"></div>
+          <div class="left2"></div>
         </div>
+        <div class="main-center">
+          <div class="centertop"></div>
+          <div class="centerbottom"></div>
+          <div class="post">
+            <div class="headtop">
+              <div class="headleft">
+                <p>Ankit Ojha</p>
+                <p>finds this funny</p>
+              </div>
+              <div class="headright">
+                <a href="">...</a>
+                <a href="">X</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="right1">
+            <div class="top-news">LinkedIn News Top Stories</div>
+          </div>
+          <div class="right2"></div>
+          <div class="right3"></div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
