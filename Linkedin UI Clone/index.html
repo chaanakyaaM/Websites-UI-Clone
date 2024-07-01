@@ -15,7 +15,7 @@
         margin: 0px;
         padding: 0px;
         /* border: 2px solid black; */
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, sans-serif;
       }
       body {
         height: 300vh;
@@ -196,7 +196,7 @@
       .post {
         height: 1000px;
         width: 100%;
-        background-color: black;
+        background-color: rgb(234, 186, 186);
         border-radius: 10px;
         border: 2px solid #dfdeda;
       }
@@ -220,6 +220,60 @@
         justify-content: center;
         align-items: center;
         column-gap: 10px;
+      }
+      .headleft > img{
+        border-radius: 50%;
+        height: 35px;
+
+      }
+      .member-name{
+        font-weight: 600;
+      }
+      .reaction{
+        font-size: 15px;
+        color: #212122;
+        font-weight: 500;
+      }
+      .headright > a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .more{
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      .head-header{
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 9px solid blue; */
+      }
+      .profile{
+        height: 85px;
+        width: 85px;
+        border-radius: 50%;
+        background-color: #212122;
+      }
+      .headstart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+      }
+      .l1{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .follow{
+        font-weight: 700;
+        font-size: 21px;
+        color: rgb(31, 31, 222);
       }
     </style>
   </head>
@@ -269,13 +323,27 @@
           <div class="post">
             <div class="headtop">
               <div class="headleft">
-                <p>Ankit Ojha</p>
-                <p>finds this funny</p>
+                <img src="assets/download-removebg-preview.png" alt="" />
+                <p class="member-name">Ankit Ojha</p>
+                <p class="reaction">finds this funny</p>
               </div>
               <div class="headright">
-                <a href="">...</a>
-                <a href="">X</a>
+                <a href="" class="more">...</a>
+                <a href="" class="cancel">X</a>
               </div>
+            </div>
+            <hr style="width: 95%;margin: auto;outline: none;border: none;background-color:#74777a ;height: 2px;">
+            <div class="head-header">
+              <div class="headstart">
+
+                <div class="profile"></div>
+                <div class="bio-content">
+                  <p class="l1">Nicholas Nouri</p>
+                  <p class="l2">Founder | Data Science Wizard | Author | Forbes Next 100</p>
+                  <p class="time">1d</p>
+                </div>
+              </div>
+              <div class="follow">+ FOLLOW</div>
             </div>
           </div>
         </div>
