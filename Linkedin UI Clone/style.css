@@ -69,7 +69,7 @@ nav {
   background-color: #f4f2ee;
   row-gap: 10px;
 
-    /* position: sticky;
+  /* position: sticky;
     top: 100px;
    */
 }
@@ -98,7 +98,7 @@ nav {
   position: sticky;
   top: 100px;
 }
-.right3{
+.right3 {
   position: sticky;
   top: 465px;
 }
@@ -182,17 +182,6 @@ nav {
   top: 7px;
   left: 50%;
 }
-/* .main-icons > a:nth-child(1)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 120px;
-  z-index: 999;
-  background-color: rgb(0, 0, 0);
-  top: 70px;
-  transition-duration: 1s;
-} */
 .post {
   height: auto;
   width: 100%;
@@ -260,7 +249,7 @@ nav {
   border-radius: 50%;
   background-color: #212122;
 }
-.down{
+.down {
   position: relative;
   height: 4px;
   width: 90px;
@@ -295,7 +284,7 @@ nav {
   height: auto;
   z-index: 999999;
 }
-.interaction{
+.interaction {
   height: 70px;
   width: 98%;
   display: flex;
@@ -304,7 +293,7 @@ nav {
   margin: 10px 10px;
 }
 
-.interaction > *{
+.interaction > * {
   height: 50px;
   width: auto;
   display: flex;
@@ -314,6 +303,9 @@ nav {
   font-weight: 500;
 }
 
-.like img, .comment img, .repost img, .send img{
+.like img,
+.comment img,
+.repost img,
+.send img {
   height: 30px;
 }
