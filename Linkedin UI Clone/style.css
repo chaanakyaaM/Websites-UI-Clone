@@ -182,16 +182,17 @@ nav {
   top: 7px;
   left: 50%;
 }
-.main-icons > a:nth-child(1)::after {
+/* .main-icons > a:nth-child(1)::after {
   content: "";
   display: block;
   position: absolute;
   height: 3px;
   width: 120px;
   z-index: 999;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   top: 70px;
-}
+  transition-duration: 1s;
+} */
 .post {
   height: auto;
   width: 100%;
@@ -258,6 +259,15 @@ nav {
   width: 85px;
   border-radius: 50%;
   background-color: #212122;
+}
+.down{
+  position: relative;
+  height: 4px;
+  width: 90px;
+  background-color: rgb(88, 88, 88);
+  top: 40px;
+  left: -525px;
+  transition-duration: 0.2s;
 }
 .headstart {
   display: flex;
