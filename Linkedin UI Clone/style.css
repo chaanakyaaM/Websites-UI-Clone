@@ -62,6 +62,8 @@ nav {
   width: 850px;
   margin: inherit 30px;
   row-gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .main-right {
   width: 425px;
@@ -136,13 +138,12 @@ nav {
 }
 .sec-icons,
 .main-icons {
+  width: 710px;
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.main-icons {
-  width: 600px;
+  gap: 30px;
 }
 .main-icons > a,
 .sec-icons > a {
@@ -298,7 +299,7 @@ nav {
   width: auto;
   display: flex;
   justify-content: center;
-  align-items: centers;
+  align-items: center;
   font-size: 25px;
   font-weight: 500;
 }
@@ -307,5 +308,5 @@ nav {
 .comment img,
 .repost img,
 .send img {
-  height: 30px;
+  height: 35px;
 }
