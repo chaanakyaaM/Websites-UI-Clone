@@ -88,11 +88,13 @@ nav {
 .right3 {
   width: 100%;
   height: 300px;
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   border: 3px solid #dfdeda;
 }
 .right1 {
+  display: flex;
   height: 550px;
 }
 .right2 {
@@ -196,9 +198,38 @@ nav {
   flex-direction: column;
 }
 .top-news {
-  width: 85%;
-  padding: 30px;
+  width: 100%;
+  padding: 20px 0px;
   background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+#ts{
+  padding-left: 35px;
+}
+.top-news span span{
+  padding-left: 35px;
+  padding-top: 40px;
+  font-size: 25px;
+  color: rgb(80, 79, 79);
+}
+.cols{
+  width: 110%;
+  margin-left: -15px;
+  font-size: 22px;
+  padding: 13px 15px;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  &:hover{
+    background-color: rgb(209, 207, 207);
+  }
+}
+.cols span{
+  font-size: 20px;
+  font-weight: 400;
 }
 .headtop {
   display: flex;
@@ -272,13 +303,22 @@ nav {
 .follow {
   font-weight: 700;
   font-size: 21px;
+  height: auto;
+  width: auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 500;
   color: rgb(31, 31, 222);
+  &:hover{
+    background-color: rgba(107, 172, 246, 0.381);
+  }
 }
 .description {
   font-size: 20px;
   width: 95%;
   margin: auto;
   margin-bottom: 10px;
+  line-height: 30px;
 }
 .media {
   width: 100%;
