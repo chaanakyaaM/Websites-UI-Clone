@@ -80,33 +80,32 @@ nav {
   border: 3px solid #dfdeda;
 }
 
-.left2{
+.left2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: fit-content;
-
 }
-.left2 p{
+.left2 p {
   height: 20px;
   width: auto;
   padding: 20px 15px;
   font-size: 20px;
 }
-.groups{
+.groups {
   width: 100%;
   font-size: 20px;
   font-weight: 500;
   color: #6d6d6c;
   display: flex;
   align-items: center;
-  padding: 5px 15px ;
+  padding: 5px 15px;
 }
-.groups img{
+.groups img {
   height: 25px;
   filter: invert(20%);
 }
-.discover{
+.discover {
   width: 100%;
   font-size: 20px;
   font-weight: 500;
@@ -116,7 +115,7 @@ nav {
   justify-content: center;
   padding: 20px 5px;
 }
-.group-head{
+.group-head {
   width: 100%;
   color: rgb(73, 193, 240);
   font-size: 20px;
@@ -246,16 +245,16 @@ nav {
   overflow: hidden;
 }
 
-#ts{
+#ts {
   padding-left: 35px;
 }
-.top-news span span{
+.top-news span span {
   padding-left: 35px;
   padding-top: 40px;
   font-size: 25px;
   color: rgb(80, 79, 79);
 }
-.cols{
+.cols {
   width: 110%;
   margin-left: -15px;
   font-size: 22px;
@@ -263,12 +262,12 @@ nav {
   padding-left: 45px;
   display: flex;
   flex-direction: column;
-  &:hover{
+  &:hover {
     background-color: rgb(231, 228, 228);
   }
 }
-.cols span{
-  font-size: 20px;
+.cols span {
+  font-size: 18px;
   font-weight: 400;
 }
 .headtop {
@@ -349,7 +348,7 @@ nav {
   border-radius: 5px;
   font-weight: 500;
   color: rgb(31, 31, 222);
-  &:hover{
+  &:hover {
     background-color: rgba(107, 172, 246, 0.381);
   }
 }
@@ -369,19 +368,26 @@ nav {
   height: 70px;
   width: 98%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  column-gap: 10px;
   margin: 10px 10px;
 }
 
 .interaction > * {
   height: 50px;
-  width: auto;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+.interaction > *:hover {
+  background-color: rgb(226, 223, 223);
 }
 
 .like img,
