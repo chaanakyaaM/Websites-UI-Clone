@@ -83,7 +83,45 @@ nav {
 .left2{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+
+}
+.left2 p{
+  height: 20px;
+  width: auto;
+  padding: 20px 15px;
+  font-size: 20px;
+}
+.groups{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6d6d6c;
+  display: flex;
   align-items: center;
+  padding: 5px 15px ;
+}
+.groups img{
+  height: 25px;
+  filter: invert(20%);
+}
+.discover{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5px;
+}
+.group-head{
+  width: 100%;
+  color: rgb(73, 193, 240);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
 }
 .right1,
 .right2,
