@@ -106,22 +106,34 @@ nav {
   filter: invert(20%);
 }
 .discover {
-  width: 100%;
+  width: 98%;
   font-size: 20px;
   font-weight: 500;
-  color: gray;
+  color: rgb(51, 51, 51);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px 5px;
+  border-radius: 0px 0px 10px 10px;
+  transition-duration: 0.2s;
+}
+
+.discover:hover {
+  background-color: rgba(228, 227, 227, 0.438);
 }
 .group-head {
   width: 100%;
-  color: rgb(73, 193, 240);
+  color: rgb(53, 144, 241);
   font-size: 20px;
   font-weight: 500;
   padding: 10px 15px;
+  transition-duration: 0.1s;
 }
+
+.group-head:hover {
+  text-decoration: underline;
+}
+
 .right1,
 .right2,
 .right3 {
@@ -186,6 +198,7 @@ nav {
   justify-content: space-between;
   gap: 30px;
 }
+
 .main-icons > a,
 .sec-icons > a {
   display: flex;
@@ -397,11 +410,11 @@ nav {
   height: 35px;
 }
 
-.like{
+.like {
   position: relative;
 }
 
-.hov{
+.hov {
   height: 60px;
   width: 350px;
   border-radius: 10px;
@@ -417,25 +430,20 @@ nav {
   transition-duration: 0.1s;
   opacity: 0;
 }
-/* animation: name 3s ease-in-out; */
 
 @keyframes name {
-  0%{
-    
-      height: 100px;
-    
+  0% {
+    height: 100px;
   }
-  100%{
-    
-
-      height: 300px;
-    
+  100% {
+    height: 300px;
   }
 }
-.hov img{
+
+.hov img {
   height: 50px;
 }
 
-.like:hover .hov{
+.like:hover .hov {
   opacity: 1;
 }
