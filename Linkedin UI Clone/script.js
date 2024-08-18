@@ -1,9 +1,10 @@
-const network = document.querySelector('#nav-network')
-const home = document.querySelector('#nav-home')
-const jobs = document.querySelector('#nav-jobs')
-const msg = document.querySelector("#nav-messaging")
-const noti = document.querySelector('#nav-notification')
-const down = document.querySelector('.down')
+const network = document.querySelector('#nav-network'),
+    home = document.querySelector('#nav-home'),
+    jobs = document.querySelector('#nav-jobs'),
+    msg = document.querySelector("#nav-messaging"),
+    noti = document.querySelector('#nav-notification'),
+    down = document.querySelector('.down'),
+    like = document.querySelector('.like')
 down.style.left='-635px';
 home.addEventListener('click',()=>{
     down.style.left='-635px';
@@ -20,3 +21,8 @@ msg.addEventListener('click',()=>{
 noti.addEventListener('click',()=>{
     down.style.left='-210px';
 });
+const hov = document.querySelector('.hov')
+like.addEventListener('mouseover',()=>{
+     hov.style.animation='name 3s ease-in-out;'
+})
+

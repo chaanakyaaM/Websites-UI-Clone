@@ -396,3 +396,46 @@ nav {
 .send img {
   height: 35px;
 }
+
+.like{
+  position: relative;
+}
+
+.hov{
+  height: 60px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 2px 10px 10px 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border: 1px solid rgb(194, 194, 194);
+  position: absolute;
+  top: -80px;
+  left: -30px;
+  transition-duration: 0.1s;
+  opacity: 0;
+}
+/* animation: name 3s ease-in-out; */
+
+@keyframes name {
+  0%{
+    
+      height: 100px;
+    
+  }
+  100%{
+    
+
+      height: 300px;
+    
+  }
+}
+.hov img{
+  height: 50px;
+}
+
+.like:hover .hov{
+  opacity: 1;
+}
