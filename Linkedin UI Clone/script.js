@@ -29,5 +29,3 @@ like.addEventListener("mouseleave", () => {
   hov.style.animation = "none";
 });
 
-const img1= document.querySelectorAll('.hov img')
-console.log(img1)
