@@ -327,6 +327,10 @@ nav {
   background-color: rgb(186, 186, 186);
   color: black;
 }
+
+.cancel img{
+  height: 30px;
+}
 .post {
   height: auto;
   width: 100%;
@@ -404,9 +408,8 @@ nav {
   font-size: 20px;
   font-weight: 600;
 }
-.more {
-  text-align: center;
-  padding-bottom: 15px;
+.more img{
+  height: 25px;
 }
 .head-header {
   width: 95%;
