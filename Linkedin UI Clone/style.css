@@ -274,6 +274,59 @@ nav {
   top: 7px;
   left: 50%;
 }
+
+.writestory{
+  height: 60%;
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 18px;
+}
+.writestory img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.writestory input{
+  width: 82%;
+  height: 65px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  font-size: 21px;
+  font-weight: 500;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.clickstory{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 170px;
+  /* border: 1px solid black; */
+  padding: 0px;
+}
+.clickstory button{
+  height: 50px;
+  width: auto;
+  font-size: 23px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #404040;
+  transition-duration: 0.2s;
+}
+.clickstory button:hover{
+  background-color: rgb(186, 186, 186);
+  color: black;
+}
 .post {
   height: auto;
   width: 100%;
