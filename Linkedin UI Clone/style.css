@@ -109,10 +109,12 @@ nav {
   display: flex;
   align-items: center;
   padding: 5px 15px;
+  cursor: pointer;
 }
 .groups img {
   height: 25px;
   filter: invert(20%);
+  cursor: pointer;
 }
 .discover {
   width: 98%;
@@ -125,6 +127,7 @@ nav {
   padding: 20px 5px;
   border-radius: 0px 0px 10px 10px;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .discover:hover {
@@ -137,6 +140,7 @@ nav {
   font-weight: 500;
   padding: 10px 15px;
   transition-duration: 0.1s;
+  cursor: pointer;
 }
 
 .group-head:hover {
@@ -254,6 +258,10 @@ nav {
 .self-profile .name{
   font-size: 23px;
   font-weight: 600;
+  cursor: pointer;
+}
+.name:hover{
+  text-decoration: underline;
 }
 .self-profile .bio{
   display: flex;
