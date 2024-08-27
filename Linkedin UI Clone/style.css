@@ -332,6 +332,9 @@ nav {
   text-align: center;
   color: #404040;
 }
+.l2{
+  font-size: 18px;
+}
 
 .saved {
   display: flex;
@@ -640,7 +643,7 @@ nav {
   }
 }
 .description {
-  font-size: 20px;
+  font-size: 22px;
   width: 95%;
   margin: auto;
   margin-bottom: 10px;
